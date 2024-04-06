@@ -351,7 +351,7 @@ DOTNET_PKG_PROJECTS=(
 )
 
 PATCHES=(
-	"${FILESDIR}/${PN}-1.1.1258-better-defs.patch"
+	"${FILESDIR}/${PN}-1.1.1262-better-defs.patch"
 )
 
 DOCS=( README.md distribution/legal/THIRDPARTY.md )
