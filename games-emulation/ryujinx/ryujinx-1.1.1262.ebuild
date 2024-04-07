@@ -329,9 +329,6 @@ RDEPEND="
 	dev-libs/icu
 	dev-libs/libxml2
 	dev-libs/openssl
-	dev-libs/wayland
-	media-libs/libpulse
-	media-video/pipewire
 	media-gfx/graphite2
 	media-libs/alsa-lib
 	media-libs/fontconfig
