@@ -329,7 +329,6 @@ RDEPEND="
 	dev-libs/icu
 	dev-libs/libxml2
 	dev-libs/openssl
-	dev-libs/wayland
 	media-gfx/graphite2
 	media-libs/alsa-lib
 	media-libs/fontconfig
@@ -337,9 +336,7 @@ RDEPEND="
 	media-libs/harfbuzz
 	media-libs/libglvnd[X]
 	media-libs/libpng
-	media-libs/libpulse
 	media-libs/libsdl2
-	media-video/pipewire
 	x11-libs/gtk+:3
 	x11-libs/libX11
 	>=dev-dotnet/dotnet-sdk-bin-8.0.203
