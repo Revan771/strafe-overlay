@@ -331,8 +331,6 @@ RDEPEND="
 	dev-libs/openssl
 	media-gfx/graphite2
 	media-libs/alsa-lib
-	media-libs/libpulse
-	media-video/pipewire
 	media-libs/fontconfig
 	media-libs/freetype
 	media-libs/harfbuzz
@@ -350,7 +348,7 @@ DOTNET_PKG_PROJECTS=(
 )
 
 PATCHES=(
-	"${FILESDIR}/${PN}-1.1.1267-better-defs.patch"
+	"${FILESDIR}/${PN}-1.1.1268-better-defs.patch"
 )
 
 DOCS=( README.md distribution/legal/THIRDPARTY.md )
