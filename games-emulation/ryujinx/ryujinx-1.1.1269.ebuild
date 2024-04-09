@@ -332,6 +332,7 @@ RDEPEND="
 	media-gfx/graphite2
 	media-libs/alsa-lib
 	media-libs/fontconfig
+	media-libs/libpulse
 	media-libs/freetype
 	media-libs/harfbuzz
 	media-libs/libglvnd[X]
