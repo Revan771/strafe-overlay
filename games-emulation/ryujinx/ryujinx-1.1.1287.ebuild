@@ -162,7 +162,7 @@ silk.net.vulkan@2.16.0
 silk.net.vulkan.extensions.ext@2.16.0
 silk.net.vulkan.extensions.khr@2.16.0
 sixlabors.fonts@1.0.0
-sixlabors.imagesharp@2.1.7
+sixlabors.imagesharp@2.1.8
 sixlabors.imagesharp.drawing@1.0.0
 skiasharp@2.88.3
 skiasharp@2.88.6
@@ -349,7 +349,7 @@ DOTNET_PKG_PROJECTS=(
 )
 
 PATCHES=(
-	"${FILESDIR}/${PN}-1.1.1282-better-defs.patch"
+	"${FILESDIR}/${PN}-1.1.1287-better-defs.patch"
 )
 
 DOCS=( README.md distribution/legal/THIRDPARTY.md )
