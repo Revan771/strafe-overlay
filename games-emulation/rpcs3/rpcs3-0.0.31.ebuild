@@ -46,7 +46,7 @@ DEPEND=">=dev-libs/flatbuffers-2.0.6
 	media-video/ffmpeg
 	net-libs/miniupnpc
 	net-misc/curl
-	sys-devel/llvm:17
+	sys-devel/llvm
 	sys-libs/ncurses
 	sys-libs/zlib
 	media-libs/libjpeg-turbo
