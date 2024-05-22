@@ -156,7 +156,7 @@ securifybv.propertystore@0.1.0
 securifybv.shelllink@0.1.0
 shaderc.net@0.1.0
 sharpziplib@1.4.2
-shimskiasharp@1.0.0.16
+shimskiasharp@1.0.0.18
 silk.net.core@2.16.0
 silk.net.vulkan@2.16.0
 silk.net.vulkan.extensions.ext@2.16.0
