@@ -22,13 +22,13 @@ avalonia.remote.protocol@11.0.10
 avalonia.skia@11.0.0
 avalonia.skia@11.0.4
 avalonia.skia@11.0.10
-avalonia.svg@11.0.0.16
-avalonia.svg.skia@11.0.0.16
+avalonia.svg@11.0.0.18
+avalonia.svg.skia@11.0.0.18
 avalonia.themes.simple@11.0.10
 avalonia.win32@11.0.10
 avalonia.x11@11.0.10
 commandlineparser@2.9.1
-concentus@1.1.7
+concentus@2.2.0
 discordrichpresence@1.2.1.24
 dynamicdata@8.4.1
 excss@4.2.3
@@ -349,7 +349,7 @@ DOTNET_PKG_PROJECTS=(
 )
 
 PATCHES=(
-	"${FILESDIR}/${PN}-1.1.1295-better-defs.patch"
+	"${FILESDIR}/${PN}-1.1.1318-better-defs.patch"
 )
 
 DOCS=( README.md distribution/legal/THIRDPARTY.md )
