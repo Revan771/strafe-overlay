@@ -63,7 +63,6 @@ BDEPEND=">=sys-devel/gcc-9
 
 PATCHES=(
 	"${FILESDIR}/${PN}-0001-versioning.patch"
-	"${FILESDIR}/${PN}-0002-vk-use-system-glslangtospv.h.patch"
 	"${FILESDIR}/${PN}-0003-add-use_wayland.patch"
 	"${FILESDIR}/${PN}-0004-allow-use-of-system-spirv-an.patch"
 	"${FILESDIR}/${PN}-0005-allow-system-cubeb.patch"
