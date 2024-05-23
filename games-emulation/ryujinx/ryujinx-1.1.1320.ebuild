@@ -340,7 +340,7 @@ RDEPEND="
 	media-libs/libsdl2
 	x11-libs/gtk+:3
 	x11-libs/libX11
-	>=dev-dotnet/dotnet-sdk-bin-8.0.105
+	>=dev-dotnet/dotnet-sdk-bin-8.0.300
 "
 
 CHECKREQS_DISK_BUILD="3G"
@@ -349,7 +349,7 @@ DOTNET_PKG_PROJECTS=(
 )
 
 PATCHES=(
-	"${FILESDIR}/${PN}-1.1.1319-better-defs.patch"
+	"${FILESDIR}/${PN}-1.1.1320-better-defs.patch"
 )
 
 DOCS=( README.md distribution/legal/THIRDPARTY.md )
