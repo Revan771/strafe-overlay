@@ -1,5 +1,5 @@
 diff --git a/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe.c b/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe.c
-index 0ca3776..160be62 100644
+index e929da6..8ad2382 100644
 --- a/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe.c
 +++ b/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe.c
 @@ -146,21 +146,21 @@ InstallAllStructures (
@@ -22,8 +22,8 @@ index 0ca3776..160be62 100644
      DateStr = (CHAR16 *)FixedPcdGetPtr (PcdFirmwareReleaseDateString);
      DateLen = StrLen (DateStr);
      if (DateLen < 3) {
--      DateStr = L"2/2/2022";
-+      DateStr = L"5/23/2024";
+-      DateStr = L"02/02/2022";
++      DateStr = L"05/25/2024";
        DateLen = StrLen (DateStr);
      }
  

@@ -15,6 +15,7 @@ BUNDLED_OPENSSL_SUBMODULE_SHA="de90e54bbe82e5be4fb9608b6f5c308bb837d355"
 BUNDLED_BROTLI_SUBMODULE_SHA="f4153a09f87cbb9c826d8fc12c74642bb2d879ea"
 BUNDLED_MIPISYST_SUBMODULE_SHA="370b5944c046bab043dd8b133727b2135af7747a"
 BUNDLED_MBEDTLS_SUBMODULE_SHA="8c89224991adff88d53cd380f42a2baa36f91454"
+BUNDLED_LIBSPDM_SUBMODULE_SHA="828ef62524bcaeca4e90d0c021221e714872e2b5"
 
 # TODO: talk with tamiko about unbundling (mva)
 
@@ -26,7 +27,8 @@ SRC_URI="https://github.com/tianocore/edk2/archive/edk2-stable${PV}.tar.gz -> ${
 	https://github.com/google/brotli/archive/${BUNDLED_BROTLI_SUBMODULE_SHA}.tar.gz -> brotli-${BUNDLED_BROTLI_SUBMODULE_SHA}.tar.gz
 	https://github.com/MIPI-Alliance/public-mipi-sys-t/archive/${BUNDLED_MIPISYST_SUBMODULE_SHA}.tar.gz -> mipisyst-${BUNDLED_MIPISYST_SUBMODULE_SHA}.tar.gz
 	https://github.com/Mbed-TLS/mbedtls/archive/${BUNDLED_MBEDTLS_SUBMODULE_SHA}.tar.gz -> mbedtls-${BUNDLED_MBEDTLS_SUBMODULE_SHA}.tar.gz
-	https://github.com/Revan771/distfiles/raw/master/edk2-ovmf-202402-qemu-firmware.tar.xz"
+	https://github.com/DMTF/libspdm/archive/${BUNDLED_LIBSPDM_SUBMODULE_SHA}.tar.gz -> libspdm-${BUNDLED_LIBSPDM_SUBMODULE_SHA}.tar.gz
+	https://github.com/Revan771/distfiles/raw/master/edk2-ovmf-202405-qemu-firmware.tar.xz"
 
 LICENSE="BSD-2 MIT"
 SLOT="0"
@@ -39,7 +41,7 @@ BDEPEND="app-emulation/qemu
 RDEPEND="!sys-firmware/edk2-ovmf-bin"
 
 PATCHES=(
-	"${FILESDIR}/edk2-ovmf-202402-fixes.patch"
+	"${FILESDIR}/edk2-ovmf-202405-fixes.patch"
 	"${FILESDIR}/edk2-ovmf-strafe.patch"
 )
 
@@ -86,6 +88,7 @@ src_prepare() {
 	cp -rl "${WORKDIR}/brotli-${BUNDLED_BROTLI_SUBMODULE_SHA}"/* "MdeModulePkg/Library/BrotliCustomDecompressLib/brotli/"
 	cp -rl "${WORKDIR}/public-mipi-sys-t-${BUNDLED_MIPISYST_SUBMODULE_SHA}"/* "MdePkg/Library/MipiSysTLib/mipisyst/"
 	cp -rl "${WORKDIR}/mbedtls-${BUNDLED_MBEDTLS_SUBMODULE_SHA}"/* "CryptoPkg/Library/MbedTlsLib/mbedtls/"
+	cp -rl "${WORKDIR}/libspdm-${BUNDLED_LIBSPDM_SUBMODULE_SHA}"/* "SecurityPkg/DeviceSecurity/SpdmLib/libspdm"
 
 	sed -i -r \
 		-e "/function SetupPython3/,/\}/{s,\\\$\(whereis python3\),${EPYTHON},g}" \
