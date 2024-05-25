@@ -61,10 +61,10 @@ microsoft.csharp@4.3.0
 microsoft.csharp@4.7.0
 microsoft.dotnet.platformabstractions@3.1.6
 microsoft.extensions.dependencymodel@6.0.0
-microsoft.identitymodel.abstractions@7.5.1
-microsoft.identitymodel.jsonwebtokens@7.5.1
-microsoft.identitymodel.logging@7.5.1
-microsoft.identitymodel.tokens@7.5.1
+microsoft.identitymodel.abstractions@7.5.2
+microsoft.identitymodel.jsonwebtokens@7.5.2
+microsoft.identitymodel.logging@7.5.2
+microsoft.identitymodel.tokens@7.5.2
 microsoft.io.recyclablememorystream@3.0.0
 microsoft.netcore.platforms@1.0.1
 microsoft.netcore.platforms@1.1.0
@@ -349,7 +349,7 @@ DOTNET_PKG_PROJECTS=(
 )
 
 PATCHES=(
-	"${FILESDIR}/${PN}-1.1.1321-better-defs.patch"
+	"${FILESDIR}/${PN}-1.1.1322-better-defs.patch"
 )
 
 DOCS=( README.md distribution/legal/THIRDPARTY.md )
