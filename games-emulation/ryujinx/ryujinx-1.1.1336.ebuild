@@ -65,7 +65,7 @@ microsoft.identitymodel.abstractions@7.6.0
 microsoft.identitymodel.jsonwebtokens@7.6.0
 microsoft.identitymodel.logging@7.6.0
 microsoft.identitymodel.tokens@7.6.0
-microsoft.io.recyclablememorystream@3.0.0
+microsoft.io.recyclablememorystream@3.0.1
 microsoft.netcore.platforms@1.0.1
 microsoft.netcore.platforms@1.1.0
 microsoft.netcore.platforms@2.0.0
@@ -349,7 +349,7 @@ DOTNET_PKG_PROJECTS=(
 )
 
 PATCHES=(
-	"${FILESDIR}/${PN}-1.1.1330-better-defs.patch"
+	"${FILESDIR}/${PN}-1.1.1336-better-defs.patch"
 )
 
 DOCS=( README.md distribution/legal/THIRDPARTY.md )
